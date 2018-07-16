@@ -1,0 +1,19 @@
+  <div class="row">
+    <div class="col-md-7 bcgimg" style="background-image: url('/images/bg.jpeg')">
+      
+    </div>
+    <div class="col-md-5">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro non quam eligendi facilis labore neque. Labore aut rem amet doloribus, assumenda minima cumque vitae, corporis quam possimus dolores atque nam?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur id dolores ipsa, cumque maxime. Quod maiores aliquam veniam vero in unde voluptatem, accusamus iste voluptatum, nihil, et. Porro, repudiandae, neque.
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro non quam eligendi facilis labore neque. Labore aut rem amet doloribus, assumenda minima cumque vitae, corporis quam possimus dolores atque nam?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur id dolores ipsa, cumque maxime. Quod maiores aliquam veniam vero in unde voluptatem, accusamus iste voluptatum, nihil, et. Porro, repudiandae, neque.
+    </div>
+    <div class="col-md-7 bcgimg" style="background-image: url('/images/bg.jpeg')">
+      
+    </div>
+
+  </div>
