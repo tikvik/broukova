@@ -9,7 +9,7 @@ $secondary:		#e4af6f
 
 $bg-primary:	$primary
 $bg-primary:	$secondary
-$body-bg:       $primary
+
 $headerheight: 60vh
 $pull-up: 5rem
 
@@ -31,6 +31,8 @@ $btn-padding-x:               $input-btn-padding-x
 $btn-border-radius:           5rem;
 $input-border-radius: 		$btn-border-radius
 $input-border-width: 		0px
+
+$navbar-toggler-border-radius:      none;
 
 
 @import "scss/bootstrap"
@@ -83,7 +85,8 @@ select:not([multiple])
 	border-right: 0px
 	border-left: 0px
 
-
+.navbar-toggler
+	border: none
 
 .blend
 	background-blend-mode: overlay
@@ -91,7 +94,9 @@ select:not([multiple])
 .pa
 	position: absolute
 .r	
-	right: 20px
+	right: 10px
+	+media-breakpoint-up(sm)
+		right: 20px
 .t
 	top: 20px
 
@@ -112,10 +117,10 @@ select:not([multiple])
 	// 	padding-right: 0rem
 
 .pull-down
-	margin-bottom: 0rem
+	margin-bottom: -2.5rem
 	+media-breakpoint-up(sm)
 		breakpoint-up(sm)
-		margin-bottom: -5rem
+		margin-bottom: -4rem
 
 .wrap
 	margin-bottom: 5rem	
@@ -123,17 +128,24 @@ select:not([multiple])
 .container-fluid
 	min-height: $headerheight
 
+.nav-link-logo
+	width: $spacer*4
+	+media-breakpoint-up(sm)
+		width: $spacer*5
+	img
+		width: 100%
+
 footer
 	color: $gray-600
 	background-color: $black
 
 
-// html 
-// 	font-size: .3rem;
-// 	+media-breakpoint-up(sm)
-//     font-size: .4rem;
-// 	+media-breakpoint-up(md)
-//     font-size: .6rem;
-// 	+media-breakpoint-up(lg)
-//     font-size: 1rem;
+html 
+	font-size: .823rem;
+	+media-breakpoint-up(sm)
+    font-size: .878rem;
+	+media-breakpoint-up(md)
+    font-size: .937rem;
+	+media-breakpoint-up(lg)
+    font-size: 1rem;
 
