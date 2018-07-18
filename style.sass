@@ -62,6 +62,10 @@ select:not([multiple])
 		margin-bottom: auto
 		.row
 			min-height: 0px		
+.list
+	li
+		list-style: square url("images/listitem.png")
+
 
 .reset
 	min-height: 0px
@@ -69,15 +73,16 @@ select:not([multiple])
 .half
 	padding: $spacer*2
 	min-height: $headerheight
-	max-width: calc(960px/2)
+	max-width: 756px
+	// max-width: calc(960px/2)
 	// +media-breakpoint-up(md)  
 	// 	max-width: calc(720px/2)
 	
 	// +media-breakpoint-up(lg)  
 	// 	max-width: calc(960px/2)
 	
-	+media-breakpoint-up(xl)  
-		max-width: calc(1140px/1.5)
+	// +media-breakpoint-up(xl)  
+	// 	max-width: calc(1140px/1.5)
 
 
 .btn-outline-primary
@@ -122,10 +127,10 @@ select:not([multiple])
 		breakpoint-up(sm)
 		margin-bottom: -4rem
 
-.wrap
-	margin-bottom: 0rem	
-	+media-breakpoint-up(sm)
-		margin-bottom: 5rem
+// .wrap
+// 	margin-bottom: 0rem	
+// 	+media-breakpoint-up(sm)
+// 		margin-bottom: 5rem
 .container-fluid
 	min-height: $headerheight
 

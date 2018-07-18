@@ -7980,16 +7980,16 @@ select:not([multiple]) {
     .row [class^='col'] .row {
       min-height: 0px; }
 
+.list li {
+  list-style: square url("images/listitem.png"); }
+
 .reset {
   min-height: 0px; }
 
 .half {
   padding: 6rem;
   min-height: 60vh;
-  max-width: calc(960px/2); }
-  @media (min-width: 1200px) {
-    .half {
-      max-width: calc(1140px/1.5); } }
+  max-width: 756px; }
 
 .btn-outline-primary {
   border-bottom: 0px;
@@ -8033,12 +8033,6 @@ select:not([multiple]) {
   @media (min-width: 576px) {
     .pull-down {
       margin-bottom: -4rem; } }
-
-.wrap {
-  margin-bottom: 0rem; }
-  @media (min-width: 576px) {
-    .wrap {
-      margin-bottom: 5rem; } }
 
 .container-fluid {
   min-height: 60vh; }
