@@ -450,8 +450,8 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -469,8 +469,8 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -482,8 +482,8 @@ pre {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -2rem;
-  margin-left: -2rem; }
+  margin-right: -2.4rem;
+  margin-left: -2.4rem; }
 
 .no-gutters {
   margin-right: 0;
@@ -502,8 +502,8 @@ pre {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  padding-right: 2.4rem;
+  padding-left: 2.4rem; }
 
 .col {
   -webkit-flex-basis: 0;
@@ -3976,7 +3976,7 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 2rem; }
+    margin-bottom: 2.4rem; }
   @media (min-width: 576px) {
     .card-deck {
       -webkit-box-orient: horizontal;
@@ -3984,8 +3984,8 @@ input[type="button"].btn-block {
       -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-      margin-right: -2rem;
-      margin-left: -2rem; }
+      margin-right: -2.4rem;
+      margin-left: -2.4rem; }
       .card-deck .card {
         display: -webkit-box;
         display: -webkit-flex;
@@ -4000,9 +4000,9 @@ input[type="button"].btn-block {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        margin-right: 2rem;
+        margin-right: 2.4rem;
         margin-bottom: 0;
-        margin-left: 2rem; } }
+        margin-left: 2.4rem; } }
 
 .card-group {
   display: -webkit-box;
@@ -4015,7 +4015,7 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 2rem; }
+    margin-bottom: 2.4rem; }
   @media (min-width: 576px) {
     .card-group {
       -webkit-box-orient: horizontal;
@@ -7890,7 +7890,7 @@ section {
   margin-top: 0rem; }
   @media (min-width: 576px) {
     .pull-up {
-      margin-top: -5rem; } }
+      margin-top: -3rem; } }
 
 .pull-down {
   margin-bottom: -2.5rem; }
@@ -7902,7 +7902,7 @@ section {
   min-height: 60vh; }
 
 .subpage .container-fluid {
-  min-height: 40vh; }
+  min-height: 50vh; }
 
 .nav-link-logo {
   width: 16rem; }
