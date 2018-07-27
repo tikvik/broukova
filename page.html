@@ -16,7 +16,7 @@
 
     <title>Hello, world!</title>
   </head>
-  <body class="bg-body" data-spy="scroll" data-target=".navbar" data-offset="250" id="top">
+  <body class="bg-body subpage" data-spy="scroll" data-target=".navbar" data-offset="250" id="top">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top px-1 py-0 py-sm-2">
        <button class="navbar-toggler navbar-toggler-left pa t" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
@@ -59,9 +59,6 @@
                 </li>
               </ul>
             </div>
-
-
-      
     </nav>
 
 
@@ -76,64 +73,72 @@
 
 
 
-
-
-
-    <div class="container bg-white pull-up">
-      <div class="row ">
-        <section>
-            <div class="col col-sm-9 text-center mx-auto ">
-              <!-- <h2>Terapie slovo Silvie</h2> -->
-              <div class="col-12 text-center "><img class="h1" src="images/flower.svg" alt=""></div>
-              <p class="lead">K terapeutické činnosti mě přivedla vlastní životní situace. Nebyla jsem šťastná ve své práci, a když se k tomu nabalila ještě neuspokojivá rodinná situace a já vyhořela, řekla jsem si „Dost!” Tehdy jsem si začala rozšiřovat vzdělání, a poté se konečně začala věnovat tomu, co mě opravdu baví. </p>
-               <p class="lead">
-              S klienty odbourávám jejich strach a provázím je, když se odváží pravdivě pohlédnout na nepříjemnou životní situaci a zahájit cestu ke spokojenějšímu životu. V praxi se mi ověřilo, že je ke štěstí zapotřebí souznění těla, mysli a emocí, což je i filosofie, kterou se řídím jak při své práci, tak i v soukromí.
-              </p>
-
-            </div>
-          </section>
-      </div>
-
-      <div class="row bg-light pruh">
-        <section>
-            <div class="col-md-10 mx-auto text-center">
-              <h2>Naučím vás zvládat stres</h2>
-              <div class="row">
-                <div class="col-md-6 text-left ">
-                  <p>Stres má mnoho psychických i fyzických příznaků jako zvýšená nervozita, podrážděnost, poruchy spánku, ale i zhoršené fyzické zdraví včetně civilizačních chorob. Opakem stresu je uvolněný organismus, který lépe řeší každodenní výzvy. Díky tomu přirozeně víme, co máme dělat, a předcházíme tak malérům.</p>
-                </div>
-                <div class="col-md-6 text-left">
-                  <p>To hlavní, co své klienty učím, je zvládat stres, tzv. „stress management”. Jako nejúčinnější nástroje se mi osvědčily relaxace a meditace, jóga a jógová terapie a muzikoterapie, tedy léčba hudbou. Díky jejich kombinaci je zapojeno celé tělo, emoce i mysl. A právě šťastná mysl je nejdůležitějším klíčem nejen ke zdraví, hlavně ale ke spokojenému životu.</p>
-                </div>
-            </div>
-
-            <button class="btn btn-outline-primary mt-2">více o aplikovaných technikách</button>
-
+<div class="container pull-up">
+    <div id="{{post.slug}}" class="container postarea">
+        <div class="row h-100 bg-white postarea">
+          <div class="col-md-4 mx-auto pt-3 my-auto pb-2 bg-white ">
+            <h2>Muzikoterapie</h2>
+            <p>Hudba je jeden z nejstarších léčebných prostředků. Spolu s rytmem a pohybem jde o přirozené nástroje k harmonizaci našeho těla a mysli. Zvuky a vibrace pomáhají zachytit i vyjádřit emoce, zklidnit mysl, odstraňovat fyzické i mentální blokády a měnit vzorce chování. Jak řekl již Platón: “Hudba a rytmus nacházejí cestu k nejskrytějším místům duše.”</p>
           </div>
-          </section>
-      </div>
-
-      <div class="row">
-        <div class="col-md-7 bcgimg" style="background-image: url('images/broukova.jpg');">
-          
-        </div>
-        <div class="col-md-5 pt-3 my-auto pb-2">
-          <h2>Vzdělání a certifikáty</h2>
-          <ul class="list w-xs-50 mx-auto">
-            <li>UK, Praha, Fakulta pedagogická</li>
-            <li>UK, Praha, Fakulta sociálních věd</li>
-            <li>DAMU, Praha: Muzikoterapie</li>
-            <li>Deutsches Institut für Entspannungstechniken unk Kommunikation, Berlín: Muzikoterapie, komunikační a relaxační techniky</li>
-            <li>Remedium Prague: Komunikace a krizová intervence </li>
-            <li>Studium jógy ve školách Parimukti School of Yoga, Keilash Tribal School a Kathmandu Centre of Healing v Indii a Tibetu</li>
-            <li>Eget porttitor lorem</li>
-          </ul>
-          <div class="col-12 text-center ">
-            <button class="btn btn-outline-primary mt-2">více o mě</button>
+          <div class="col-md-7 text-center p-0 bcgimg bg-white sh" style="background-image: url('images/broukova.jpg');"data-toggle="modal">
+           <div class="d-block h-100" href="#" role="button" data-target="#{{post.ID}}" data-toggle="modal"></div>
           </div>
         </div>
-      </div>
     </div>
+
+    <div id="{{post.slug}}" class="container postarea">
+        <div class="row h-100 bg-white postarea">
+          <div class="col-md-4 mx-auto pt-3 my-auto pb-2 bg-white ">
+            <h2>Jóga a jógová terapie</h2>
+            <p>Propojení těla, mysli a duše je psychologickým trojúhelníkem jógové filosofie. Sladění pohybu s dechem při provádění jednoduchých cviků zklidňuje a účinně odstraňuje negativní vlivy stresu. Umožňuje pohled sama na sebe i obrácení se do sebe. Jóga přináší celkové posílení organismu, imunity, stabilizuje hormonální systém a prospívá zdraví.</p>
+          </div>
+          <div class="col-md-7 text-center p-0 bcgimg bg-white sh" style="background-image: url('images/broukova.jpg');"data-toggle="modal">
+           <div class="d-block h-100" href="#" role="button" data-target="#{{post.ID}}" data-toggle="modal"></div>
+          </div>
+        </div>
+    </div>
+    <div id="{{post.slug}}" class="container postarea">
+        <div class="row h-100 bg-white">
+          <div class="col-md-4 mx-auto pt-3 my-auto pb-2 bg-white ">
+            <h2>Relaxace a meditace</h2>
+            <p>Při relaxačních technikách se nejčastěji pracuje s dechem a jeho zklidněním a uvolňováním napjatých svalů. Díky relaxaci dokážeme sledovat procesy v těle a mysli, a tím zabránit, aby nás ovládaly. Pouze se zklidněným organismem je možné podniknout kroky k životnímu naplnění a štěstí.</p>
+          </div>
+          <div class="col-md-7 text-center p-0 bcgimg bg-white sh" style="background-image: url('images/broukova.jpg');"data-toggle="modal">
+           <div class="d-block h-100" href="#" role="button" data-target="#{{post.ID}}" data-toggle="modal"></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container-fluid">
       <div class="row bg-secondary-grad">
         <div class="col-md-6 bg-primary bcgimg bg-secondary " style="background-image: url('images/map.png');"></div>

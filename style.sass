@@ -7,27 +7,32 @@ $secondary:		#e4af6f
 
 
 
+
 $bg-primary:	$primary
 $bg-primary:	$secondary
+$bg-dark: #333
+
 
 $headerheight: 60vh
 $pull-up: 5rem
 
 
-
-$spacer: 				3rem
-$grid-gutter-width:     $spacer*2
+$enable-rounded:            false;
+$spacer: 				4rem
+$grid-gutter-width:     $spacer*1
 $input-btn-padding-y:         .375rem * 3
 $input-btn-padding-x:         .75rem * 3
 $navbar-nav-link-padding-x:         $spacer/2;
 
-
+$headings-margin-bottom:      ($spacer / 1.5);
+$headings-color: $primary
 $btn-padding-y:               $input-btn-padding-y 
 $btn-padding-x:               $input-btn-padding-x 
 // $input-padding-y:                       $input-btn-padding-y/2;
 // $input-padding-x:                       $input-btn-padding-x/2;
 
-
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+// 'Raleway', sans-serif,
 $btn-border-radius:           5rem;
 $input-border-radius: 		$btn-border-radius
 $input-border-width: 		0px
@@ -38,6 +43,7 @@ $navbar-toggler-border-radius:      none;
 @import "scss/bootstrap"
 @import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css')
 
+
 select:not([multiple]) 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -47,25 +53,54 @@ select:not([multiple])
     padding: 1.125rem 2.25rem;
     padding-right: 1.5em
 
+small
+	font-size: 0.75rem
+
+body
+	color: #7f7f7f
+
 .text-gray
 	color: $gray-500
 
 .bg-secondary-grad
 	+gradient-x($start-color: darken($secondary,20%) , $end-color: $secondary, $start-percent: 0%, $end-percent: 100%)
 
+.bg-body
+	background: linear-gradient(to bottom, $bg-dark 0%, $bg-dark 5%, $primary 5%, $primary 100%)
+	// +gradient-y-three-colors($start-color: $bg-dark, $mid-color: $primary, $color-stop: 50%, $end-color: $bg-dark)
+
+.bg-dark
+	background-color: $bg-dark !important
+
+.claim
+	font-weight: $font-weight-light
+
+
+.contact
+	.nav-item
+		padding-bottom: 1rem
+
 .row
-	min-height: $spacer*10	
-	[class^='col']
-		padding-top: $spacer
-		padding-bottom: $spacer
-		margin-top: auto
-		margin-bottom: auto
-		.row
-			min-height: 0px		
+	// min-height: $spacer*10	
+	// [class^='col']
+	// 	padding-top: $spacer
+	// 	padding-bottom: $spacer
+	// 	margin-top: auto
+	// 	margin-bottom: auto
+		// .row
+		// 	min-height: 0px		
+
+section
+	padding-top: $spacer*1.2
+	padding-bottom: $spacer*1.2
+
+
 .list
 	li
 		list-style: square url("images/listitem.png")
-
+.lead
+	line-height: 1.7
+	letter-spacimg: 1.7
 
 .reset
 	min-height: 0px
@@ -84,6 +119,19 @@ select:not([multiple])
 	// +media-breakpoint-up(xl)  
 	// 	max-width: calc(1140px/1.5)
 
+.postarea
+	&:nth-child(odd)
+		+media-breakpoint-up(md)
+			[class^='col']
+				&:nth-child(odd)
+					margin-left: auto
+
+	&:nth-child(even)
+		+media-breakpoint-up(md)
+			[class^='col']
+				order: 1
+				&:nth-child(even)
+					order: -1
 
 .btn-outline-primary
 	border-bottom: 0px
@@ -111,7 +159,7 @@ select:not([multiple])
 	background-color: $gray-600
 	margin-top: 0px !important
 	margin-bottom: 0px !important
-	min-height: $spacer*10
+	min-height: $spacer*8
 
 .pull-up
 	margin-top: 0rem
@@ -133,6 +181,10 @@ select:not([multiple])
 // 		margin-bottom: 5rem
 .container-fluid
 	min-height: $headerheight
+
+.subpage
+	.container-fluid
+		min-height: $headerheight/1.5
 
 .nav-link-logo
 	width: $spacer*4

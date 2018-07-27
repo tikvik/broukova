@@ -1,0 +1,30 @@
+<div id="{{post.slug}}" class="container-fluid postarea bg-secondary">
+
+		<div class="row h-100 bg-secondary">
+			<div class="col-md-6 border-right bg-white d-flex square half">
+				{# <h2>{{post.title}}</h2> #}
+				{{post.content}}
+			</div>
+			<div class="col-md-6 text-center p-0 bcgimg bg-white sh" style="background-image: url('{{post.thumbnail.src}}');" {# data-aos="fade-top" #} data-toggle="modal">
+			 <div class="d-block h-100" href="#" role="button" data-target="#{{post.ID}}" data-toggle="modal"></div>
+			</div>
+		</div>
+</div>
+
+{% for post in posts %}
+	<!-- Modal -->
+<div class="modal fade" id="{{post.ID}}" tabindex="-1" role="dialog" aria-labelledby="#{{post.ID}}" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered text-center" role="document">
+    <div class="modal-content">
+    	<div class="modal-header border-bottom-0 pa">
+			<button type="button" class="btn btn-info close ml-auto border-0" data-dismiss="modal" aria-label="Close">
+	          <i class="fas fa-times"></i>
+	        </button>
+	    </div>
+      <div class="modal-body p-0">
+        <img class="img-fluid" src="{{post.thumbnail.src}}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
